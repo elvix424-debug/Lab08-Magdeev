@@ -49,20 +49,100 @@
 // }
 
 
-string correctPassword = "qwerty123";
-int count = 0;
+// string correctPassword = "qwerty123";
+// int count = 0;
+// while (true)
+// {
+//     Console.Write("Введите пароль от личного кабинета: ");
+//     string password = Console.ReadLine();
+
+//     if (password == correctPassword)
+//     {
+//         Console.WriteLine("Доступ разрешён");
+//         break;
+//     }
+//     count++;
+//     Console.WriteLine("Неверный пароль, попробуйте снова");
+// }
+
+// Console.WriteLine($"Количество неудачных попыток: {count}");
+
+
+// string answer;
+
+// do
+// {
+//     Console.WriteLine("Введите дату посещения (например, 01.09): ");
+//     string date = Console.ReadLine();
+//     Console.WriteLine("Запись добавлена: {date}");
+
+//     Console.WriteLine("Добавить еще одну запись?(да/нет): ");
+//     answer = Console.ReadLine();
+// } while (answer == "да");
+
+// Console.WriteLine("Дневник сохранен");
+
+//Самостоятельные задания ★
+//Задачка Б
+// int count = 0;
+
+// Console.WriteLine("Вводите имена учеников (для завершения введите 'конец'):");
+// string name = Console.ReadLine();
+
+// while (name != "конец")
+// {
+//     count++;
+//     name = Console.ReadLine();
+// }
+
+// Console.WriteLine($"Всего введено имён: {count}");
+
+// //Задача Г
+// while (true)
+// {
+//     Console.Write("Введите целое число: ");
+//     int num = int.Parse(Console.ReadLine());
+//     if (num % 7 == 0)
+//     {
+//         Console.WriteLine("Найдено!");
+//         break;
+//     }
+// }
+
+//Индивидуальный вариант ★★
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+//Задание №3
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// int i = 1;
+// while (i <= num)
+// {
+//     Console.WriteLine($"{i} -> {i * i}");
+//     i++;
+// }
+
+//Задание №5
+int id = 5555;
 while (true)
 {
-    Console.Write("Введите пароль от личного кабинета: ");
-    string password = Console.ReadLine();
-    
-    if (password == correctPassword)
+    Console.Write("Введите код домофона: ");
+    int enter = int.Parse(Console.ReadLine());
+    if (enter == id)
     {
-        Console.WriteLine("Доступ разрешён");
+        Console.WriteLine("Дверь открыта");
         break;
     }
-    count++;
-    Console.WriteLine("Неверный пароль, попробуйте снова");
 }
-
-Console.WriteLine($"Количество неудачных попыток: {count}");
