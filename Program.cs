@@ -21,32 +21,32 @@
 // Console.WriteLine($"Количество введенных оценок: {count}");
 
 
-// int sum = 0;
-// int count = 0;
-// int max = 0;
+int sum = 0;
+int count = 0;
+int max = 0;
 
-// Console.WriteLine("Вводите оценки, для завершения введите -1:");
-// int grade = int.Parse(Console.ReadLine());
+Console.WriteLine("Вводите оценки, для завершения введите -1:");
+int grade = int.Parse(Console.ReadLine());
 
-// while (grade != -1) {
-//     sum += grade;
-//     count++;
-//     if(grade > max)
-//     {
-//         max = grade;
-//     }
-//     grade = int.Parse(Console.ReadLine());
-// }
+while (grade != -1) {
+    sum += grade;
+    count++;
+    if(grade > max)
+    {
+        max = grade;
+    }
+    grade = int.Parse(Console.ReadLine());
+}
 
-// if (count > 0)
-// {
-//     Console.WriteLine($"Средний балл: {(double)sum / count}");
-//     Console.WriteLine($"Наибольшая оценка: {max}");
-// }
-// else
-// {
-//     Console.WriteLine("Оценок не было введено");
-// }
+if (count > 0)
+{
+    Console.WriteLine($"Средний балл: {(double)sum / count}");
+    Console.WriteLine($"Наибольшая оценка: {max}");
+}
+else
+{
+    Console.WriteLine("Оценок не было введено");
+}
 
 
 // string correctPassword = "qwerty123";
@@ -134,15 +134,15 @@
 //     i++;
 // }
 
-//Задание №5
-int id = 5555;
-while (true)
-{
-    Console.Write("Введите код домофона: ");
-    int enter = int.Parse(Console.ReadLine());
-    if (enter == id)
-    {
-        Console.WriteLine("Дверь открыта");
-        break;
-    }
-}
+// //Задание №5
+// int id = 5555;
+// while (true)
+// {
+//     Console.Write("Введите код домофона: ");
+//     if (int.TryParse(Console.ReadLine(), out int enter) && enter == id)
+//     {
+//         Console.WriteLine("Дверь открыта");
+//         break;
+//     }
+//     Console.WriteLine("Неверный код, попробуйте снова.");
+// }
